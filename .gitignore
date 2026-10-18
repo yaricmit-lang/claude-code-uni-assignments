@@ -1,0 +1,24 @@
+# Local environments and third-party tools (created by setup.sh)
+venv/
+tools/
+.mcp.json
+.claude/skills/humanizer/
+.claude/settings.local.json
+__pycache__/
+*.pyc
+
+# Personal material: never commit
+00_inbox/*
+lectures/*
+works/*
+_archive/*
+examples/*
+!examples/README.md
+!examples/_structure-notes/
+!examples/_structure-notes/*.md
+!*/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

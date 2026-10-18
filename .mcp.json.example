@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "paper-search": {
+      "type": "stdio",
+      "command": "<PROJECT_ROOT>/tools/mcp-venv/bin/python",
+      "args": ["-c", "import sys; from paper_search_mcp.server import main; sys.argv[0]='paper-search-mcp'; sys.exit(main())"],
+      "env": {}
+    },
+    "arxiv": {
+      "type": "stdio",
+      "command": "<PROJECT_ROOT>/tools/mcp-venv/bin/python",
+      "args": ["-c", "import sys; from arxiv_mcp_server import main; sys.argv[0]='arxiv-mcp-server'; sys.exit(main())", "--storage-path", "<PROJECT_ROOT>/tools/arxiv-papers"],
+      "env": {}
+    }
+  }
+}
